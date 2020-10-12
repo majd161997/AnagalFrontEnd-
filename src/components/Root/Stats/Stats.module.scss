@@ -1,0 +1,71 @@
+.leftBar
+{
+    position: fixed;
+    top: 70px;
+    width: 20%;
+    border: 1px solid #dadada;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.leftBar button
+{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    transition: background-color ease-in-out .2s;
+    cursor: pointer;
+    outline: none;
+}
+
+.leftBar button:hover
+{
+    background-color: #f0f5f7;
+}
+
+.content
+{
+    position: relative;
+    top: 70px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+    background-color: white;
+    border-radius: 5px;
+    width: 60%;
+    margin: 0px 10%;
+    padding: 20px;
+    float: right;
+    overflow: auto;
+}
+
+.table
+{
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .leftBar
+    {
+        width: 94%;
+        text-align: center;
+    }
+
+    .leftBar button
+    {
+        width: auto;
+        margin: 0px 2px;
+    }
+
+    .content
+    {
+        top: 100px;
+        width: 86%;
+        float: none;
+        margin: 0px;
+    }
+
+}

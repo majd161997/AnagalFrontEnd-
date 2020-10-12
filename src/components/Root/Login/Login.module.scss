@@ -1,0 +1,128 @@
+$LeftLoginBG: White;
+$RightRegisterBG: White;
+$FontColor: #666;
+$FormBG: #cdcdcd;
+$BtnBG: #19b9e7;
+$BtnHoverBG: #239cbf;
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ededed;
+}
+
+.LoginIntro
+{
+    color: black;
+    text-align: center;
+    display: table;
+    margin: 50px auto;
+    font-size: 25px;
+}
+
+.LoginDiv
+{
+    margin: 5% auto;
+    display: table;
+    width: 70%;
+}
+
+.LeftLogin
+{
+    text-align: center;
+    float: left;
+    width: 40%;
+    padding-top: 30px;
+    background-color: $LeftLoginBG;
+    border-radius: 5px;
+    color: $FontColor;
+    overflow: hidden;
+}
+
+.RightRegister
+{
+    text-align: center;
+    float: right;
+    width: 40%;
+    padding-top: 30px;
+    background-color: $RightRegisterBG;
+    border-radius: 5px;
+    color: $FontColor;
+    overflow: hidden;
+}
+
+.FormStyle
+{
+    background-color: $FormBG;
+    width: 100%;
+    padding: 20px 0px;
+    box-shadow: 0px 0px 10px 2px $FormBG;
+}
+
+.TextInput
+{
+    margin: 5px;
+    width: 80%;
+    padding: 10px 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid #dadada;
+}
+
+.BtnInput
+{
+    margin: 5px;
+    width: 80%;
+    padding: 10px;
+    background-color: $BtnBG;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color ease-in-out .2s;
+}
+
+.BtnInput:hover
+{
+    background-color: $BtnHoverBG;
+}
+
+.login_register_res
+{
+    color: red;
+    font-size: 13px;
+    line-height: 2em;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .LoginDiv
+    {
+        display: table;
+        width: 100%;
+    }
+    .LeftLogin
+    {
+        text-align: center;
+        width: 90%;
+        padding-top: 30px;
+        background-color: $LeftLoginBG;
+        border-radius: 5px;
+        color: $FontColor;
+        overflow: hidden;
+        margin: 10px 5%;
+    }
+
+    .RightRegister
+    {
+        text-align: center;
+        width: 90%;
+        padding-top: 30px;
+        background-color: $RightRegisterBG;
+        border-radius: 5px;
+        color: $FontColor;
+        overflow: hidden;
+        margin: 10px 5%;
+    }
+}
