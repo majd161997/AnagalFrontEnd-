@@ -34,6 +34,7 @@ $BtnHoverBG: #239cbf;
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    -webkit-transition: background-color ease-in-out .2s;
     transition: background-color ease-in-out .2s;
 }
 
@@ -54,12 +55,14 @@ $BtnHoverBG: #239cbf;
     position: fixed;
     float: left;
     height: 100%;
+    -webkit-transition: width ease 1s;
     transition: width ease 1s;
 }
 
 .youtube_result
 {
     float: right;
+    -webkit-transition: width ease 1s;
     transition: width ease 1s;
 }
 
@@ -70,12 +73,16 @@ $BtnHoverBG: #239cbf;
     max-height: 200px;
     cursor: pointer;
     margin-bottom: 20px;
+    -webkit-transition: -webkit-transform ease-in-out .2s;
+    transition: -webkit-transform ease-in-out .2s;
     transition: transform ease-in-out .2s;
+    transition: transform ease-in-out .2s, -webkit-transform ease-in-out .2s;
 }
 
 .newItem:hover
 {
-    transform: scale(1.02)
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02)
 }
 
 .itemImage
@@ -94,6 +101,7 @@ $BtnHoverBG: #239cbf;
 
 #newItemRight
 {
+    display: -ms-grid;
     display: grid;
     float: right;
     width: 73%;
@@ -136,6 +144,7 @@ $BtnHoverBG: #239cbf;
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    -webkit-transition: background-color ease-in-out .2s;
     transition: background-color ease-in-out .2s;
 }
 
@@ -162,6 +171,7 @@ $BtnHoverBG: #239cbf;
     border: none;
     padding: 0px 25px;
     float: right;
+    -webkit-transition: all ease-in-out .2s;
     transition: all ease-in-out .2s;
     border-radius: 5px;
     margin: 0px 10px;
@@ -198,6 +208,7 @@ $BtnHoverBG: #239cbf;
     padding: 8px 25px;
     background-color: white;
     text-align: left;
+    -webkit-transition: background-color ease-in-out .2s;
     transition: background-color ease-in-out .2s;
     outline: none;
 }
@@ -267,6 +278,7 @@ $BtnHoverBG: #239cbf;
         height: 100%;
         margin-bottom: 10px;
         float: right;
+        -webkit-transition: none;
         transition: none;
     }
 
@@ -274,6 +286,7 @@ $BtnHoverBG: #239cbf;
     {
         float: none;
         width: 100%;
+        -webkit-transition: none;
         transition: none;
     }
 

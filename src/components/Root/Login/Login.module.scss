@@ -80,6 +80,7 @@ body
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    -webkit-transition: background-color ease-in-out .2s;
     transition: background-color ease-in-out .2s;
 }
 
